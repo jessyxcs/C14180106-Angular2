@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ListNotesService } from '../list-notes.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class DetailComponent implements OnInit {
   }
 
   addFavourite(index: number){
-    
+    this.listNotesVar.addFavNotes(index);
   };
 
   ngOnInit() {

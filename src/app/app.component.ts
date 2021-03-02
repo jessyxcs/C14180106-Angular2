@@ -18,6 +18,10 @@ export class AppComponent  {
   isi: String;
   tanggal: String;
 
+  navigateFav(){
+    this.router.navigate(["/favourite"]);
+  }
+
   addNotes(){
     this.listNotesVar.addListNotes(this.judul, this.isi, this.tanggal);
     this.router.navigate(["/detail"]);
