@@ -1,0 +1,8 @@
+<h2>Notes Detail</h2>
+
+<div *ngFor="let items of listNotes; let i = index">
+  {{i+1}}. {{items.judulGlob}} - {{items.tanggalGlob}} <br>
+  {{items.isiGlob}} <br>
+  <button (click)="addFavourite(i)">Favourite</button> <br><br>
+  <br>
+</div>

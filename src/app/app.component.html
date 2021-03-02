@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>NOTES APPLICATION</h1><br><br>
+
+<label>Judul</label><br>
+<input type="text" [(ngModel)]="judul"/><br><br>
+
+<label>Isi</label><br>
+<input type="text" [(ngModel)]="isi"/><br><br>
+
+<label>Tanggal</label><br>
+<input type="text" [(ngModel)]="tanggal"/><br><br>
+
+<button (click)="addNotes()">Submit</button><br><br>
+
+<router-outlet></router-outlet>
